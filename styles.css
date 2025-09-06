@@ -1,0 +1,46 @@
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+    border: 2px solid #333;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+.cell.revealed {
+    background-color: #f0f0f0;
+    cursor: default;
+}
+
+.cell.mine {
+    background-color: #ff4444;
+}
+
+.cell.flagged {
+    background-color: #ffcc00;
+}
+
+.number-1 { color: blue; }
+.number-2 { color: green; }
+.number-3 { color: red; }
+.number-4 { color: darkblue; }
+.number-5 { color: brown; }
+.number-6 { color: teal; }
+.number-7 { color: black; }
+.number-8 { color: gray; }
